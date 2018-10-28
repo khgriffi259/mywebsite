@@ -197,6 +197,15 @@ main {
       border-color: #fdbb30;
       transition: all 0.5s ease-out; }
 
+.project {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.7rem;
+  margin: auto; }
+  .project img {
+    width: 100%;
+    border: 3px solid #fff; }
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -227,11 +236,12 @@ main {
     color: #000; }
 
 .btn-dark {
-  background: #002149;
-  color: #fdbb30; }
+  background: black;
+  color: #fff; }
 
 .btn-light {
   background: #fff;
+  background: #fdbb30;
   color: #333; }
 
 #main-footer {
@@ -243,7 +253,9 @@ main {
 
 @media screen and (min-width: 1171px) {
   main .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  main .project {
+    grid-template-columns: repeat(1, 1fr); } }
 
 @media screen and (min-width: 901px) and (max-width: 1170px) {
   main .projects {
