@@ -12,6 +12,10 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+
+  &#tip-shop {
+    // background: black;
+  }
 }
 
 //Headings
@@ -55,6 +59,12 @@ main {
   max-width: 1500px;
   margin: auto;
 
+  hr {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
   .icons {
     margin-top: 1rem;
 
@@ -66,6 +76,10 @@ main {
         @include easeOut;
       }
     }
+  }
+
+  &#tip-shop {
+    padding: 2rem;
   }
 
   &#home {
@@ -126,9 +140,16 @@ main {
   // max-width: 1500px;
   margin: auto;
 
+  .picture-links {
+    display: block;
+    height: 250px;
+    margin-bottom: 2rem;
+  }
   img {
     width: 100%;
-    border: 3px solid #fff;
+    max-height: 100%;
+    object-fit: contain;
+    // border: 3px solid #fff;
     &:hover {
       opacity: 0.5;
       border-color: $secondary-color;
@@ -146,11 +167,39 @@ main {
 
   img {
     width: 100%;
-    border: 3px solid #fff;
-    &:hover {
-      // opacity: 0.5;
-      // border-color: $secondary-color;
-      // @include easeOut;
+  }
+
+  section {
+    padding: 1rem 0.5rems;
+
+    div#color_themes {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 0.7rem;
+      padding: 1rem 0.5rems;
+
+      img {
+        width: 100%;
+      }
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0.7rem;
+
+      .text-side {
+        padding-top: 200px;
+      }
+      img {
+        object-fit: cover;
+        object-position: top;
+        width: 75%;
+        max-height: 500px;
+        // max-height: 100%;
+        margin: auto;
+        display: block;
+        padding: 1rem;
+      }
     }
   }
 }
@@ -166,7 +215,7 @@ main {
 
   div {
     font-size: 2rem;
-    border: 3px solid white;
+    // border: 3px solid white;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     @include easeOut;
@@ -204,8 +253,12 @@ main {
 .btn-light {
   @extend .btn;
   background: #fff;
-  background: #fdbb30;
+  // background: #fdbb30;
   color: #333;
+  &:hover {
+    background: black;
+    color: white;
+  }
 }
 
 #main-footer {

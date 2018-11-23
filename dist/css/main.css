@@ -144,6 +144,10 @@ main {
   min-width: 480px;
   max-width: 1500px;
   margin: auto; }
+  main hr {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -151,6 +155,8 @@ main {
       main .icons a:hover {
         color: #fdbb30;
         transition: all 0.5s ease-out; }
+  main#tip-shop {
+    padding: 2rem; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -189,9 +195,14 @@ main {
   grid-template-columns: 1fr;
   grid-gap: 0.7rem;
   margin: auto; }
+  .projects .picture-links {
+    display: block;
+    height: 250px;
+    margin-bottom: 2rem; }
   .projects img {
     width: 100%;
-    border: 3px solid #fff; }
+    max-height: 100%;
+    object-fit: contain; }
     .projects img:hover {
       opacity: 0.5;
       border-color: #fdbb30;
@@ -203,8 +214,30 @@ main {
   grid-gap: 0.7rem;
   margin: auto; }
   .project img {
-    width: 100%;
-    border: 3px solid #fff; }
+    width: 100%; }
+  .project section {
+    padding: 1rem 0.5rems; }
+    .project section div#color_themes {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 0.7rem;
+      padding: 1rem 0.5rems; }
+      .project section div#color_themes img {
+        width: 100%; }
+    .project section .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0.7rem; }
+      .project section .two-col .text-side {
+        padding-top: 200px; }
+      .project section .two-col img {
+        object-fit: cover;
+        object-position: top;
+        width: 75%;
+        max-height: 500px;
+        margin: auto;
+        display: block;
+        padding: 1rem; }
 
 .boxes {
   display: flex;
@@ -214,7 +247,6 @@ main {
   margin-top: 1rem; }
   .boxes div {
     font-size: 2rem;
-    border: 3px solid white;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
@@ -241,8 +273,10 @@ main {
 
 .btn-light {
   background: #fff;
-  background: #fdbb30;
   color: #333; }
+  .btn-light:hover {
+    background: black;
+    color: white; }
 
 #main-footer {
   text-align: center;
@@ -253,13 +287,18 @@ main {
 
 @media screen and (min-width: 1171px) {
   main .projects {
-    grid-template-columns: repeat(3, 1fr); }
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr; }
+    main .projects img {
+      height: 300px;
+      object-fit: contain; }
   main .project {
     grid-template-columns: repeat(1, 1fr); } }
 
 @media screen and (min-width: 901px) and (max-width: 1170px) {
   main .projects {
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
   main .about-info {
     grid-template-areas: "bio-image bio" "job1 job2" "job3 job3";
     grid-template-columns: 1fr 2fr; }
@@ -273,10 +312,18 @@ main {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 2rem; }
-    main .sm-heading {
-      display: none; }
     main .projects {
       grid-template-columns: repeat(1, 1fr); }
+    main .project div#color_themes {
+      grid-template-columns: 1fr 1fr 1fr; }
+    main .project section .two-col {
+      grid-template-columns: 1fr; }
+      main .project section .two-col .text-side {
+        padding-top: 0px; }
+    main .project section div.image-first div:nth-of-type(1) {
+      order: 2; }
+    main .project section div.image-first div:nth-of-type(2) {
+      order: 1; }
     main .about-info {
       grid-template-areas: "bio-image" "bio" "job1" "job2" "job3";
       grid-template-columns: 1fr; }
@@ -306,6 +353,8 @@ main {
     align-items: center;
     text-align: center;
     padding: 2rem; }
+    main hr {
+      margin-top: 0; }
     main #home h1 {
       margin-top: 10vh; }
     main .lg-heading {
@@ -313,10 +362,24 @@ main {
       margin-top: 1rem;
       font-size: 5rem;
       margin-bottom: 1rem; }
-    main .sm-heading {
-      display: none; }
     main .projects {
       grid-template-columns: 1fr; }
+    main .project {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: auto; }
+      main .project img {
+        width: 100%; }
+      main .project section #color_themes {
+        display: none; }
+      main .project section .two-col {
+        grid-template-columns: 1fr; }
+        main .project section .two-col .text-side {
+          padding-top: 0px; }
+      main .project section div.image-first div:nth-of-type(1) {
+        order: 2; }
+      main .project section div.image-first div:nth-of-type(2) {
+        order: 1; }
     main .about-info {
       grid-template-areas: "bio-image" "bio" "job1" "job2" "job3";
       grid-template-columns: 1fr; }
