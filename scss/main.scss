@@ -80,7 +80,91 @@ main {
 
   &#tip-shop {
     padding: 2rem;
+    
+    .project {
+      display: grid;
+      grid-template-columns: 1fr;
+      // grid-gap: 0.7rem;
+      // // max-width: 1500px;
+      // margin: auto;
+    
+      // img {
+      //   width: 100%;
+      // }
+    
+      section {
+              
+          padding: 1rem 0.5rems;
+    
+          div#color_themes {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 0.7rem;
+            padding: 1rem 0.5rems;
+    
+            img {
+              width: 100%;
+            }
+          }
+    
+          .two-col {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0.7rem;
+    
+            .text-side {
+              padding-top: 200px;
+            }
+            
+            img {
+              object-fit: cover;
+              object-position: top;
+              width: 75%;
+              max-height: 500px;
+              // max-height: 100%;
+              margin: auto;
+              display: block;
+              padding: 1rem;
+            }
+        }
+      }
+    }
   }
+
+  &#pacersblog {
+    padding: 2rem;
+    
+    .project {
+      
+      section {
+              
+          padding: 1rem 0.5rems;
+        
+          .two-col {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0.7rem;
+    
+            .text-side {
+              padding-top: 100px;
+              // text-align: right;
+            }
+            
+            img {
+              object-fit: cover;
+              object-position: top;
+              width: 100%;
+              max-height: 500px;
+              // max-height: 100%;
+              margin: auto;
+              display: block;
+              padding: 1rem;
+            }
+        }
+      }
+    }
+  }
+
 
   &#home {
     overflow: hidden;
@@ -158,51 +242,7 @@ main {
   }
 }
 
-.project {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 0.7rem;
-  // max-width: 1500px;
-  margin: auto;
 
-  img {
-    width: 100%;
-  }
-
-  section {
-    padding: 1rem 0.5rems;
-
-    div#color_themes {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-gap: 0.7rem;
-      padding: 1rem 0.5rems;
-
-      img {
-        width: 100%;
-      }
-    }
-    .two-col {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 0.7rem;
-
-      .text-side {
-        padding-top: 200px;
-      }
-      img {
-        object-fit: cover;
-        object-position: top;
-        width: 75%;
-        max-height: 500px;
-        // max-height: 100%;
-        margin: auto;
-        display: block;
-        padding: 1rem;
-      }
-    }
-  }
-}
 
 //Contact Page
 
