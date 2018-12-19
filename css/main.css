@@ -157,6 +157,50 @@ main {
         transition: all 0.5s ease-out; }
   main#tip-shop {
     padding: 2rem; }
+    main#tip-shop .project {
+      display: grid;
+      grid-template-columns: 1fr; }
+      main#tip-shop .project section {
+        padding: 1rem 0.5rems; }
+        main#tip-shop .project section div#color_themes {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-gap: 0.7rem;
+          padding: 1rem 0.5rems; }
+          main#tip-shop .project section div#color_themes img {
+            width: 100%; }
+        main#tip-shop .project section .two-col {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 0.7rem; }
+          main#tip-shop .project section .two-col .text-side {
+            padding-top: 200px; }
+          main#tip-shop .project section .two-col img {
+            object-fit: cover;
+            object-position: top;
+            width: 75%;
+            max-height: 500px;
+            margin: auto;
+            display: block;
+            padding: 1rem; }
+  main#pacersblog {
+    padding: 2rem; }
+    main#pacersblog .project section {
+      padding: 1rem 0.5rems; }
+      main#pacersblog .project section .two-col {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.7rem; }
+        main#pacersblog .project section .two-col .text-side {
+          padding-top: 100px; }
+        main#pacersblog .project section .two-col img {
+          object-fit: cover;
+          object-position: top;
+          width: 100%;
+          max-height: 500px;
+          margin: auto;
+          display: block;
+          padding: 1rem; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -207,37 +251,6 @@ main {
       opacity: 0.5;
       border-color: #fdbb30;
       transition: all 0.5s ease-out; }
-
-.project {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 0.7rem;
-  margin: auto; }
-  .project img {
-    width: 100%; }
-  .project section {
-    padding: 1rem 0.5rems; }
-    .project section div#color_themes {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-gap: 0.7rem;
-      padding: 1rem 0.5rems; }
-      .project section div#color_themes img {
-        width: 100%; }
-    .project section .two-col {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 0.7rem; }
-      .project section .two-col .text-side {
-        padding-top: 200px; }
-      .project section .two-col img {
-        object-fit: cover;
-        object-position: top;
-        width: 75%;
-        max-height: 500px;
-        margin: auto;
-        display: block;
-        padding: 1rem; }
 
 .boxes {
   display: flex;
@@ -314,15 +327,15 @@ main {
       margin-bottom: 2rem; }
     main .projects {
       grid-template-columns: repeat(1, 1fr); }
-    main .project div#color_themes {
-      grid-template-columns: 1fr 1fr 1fr; }
-    main .project section .two-col {
+    main#tip-shop .project section div#color_themes, main#pacersblog .project section div#color_themes {
+      grid-template-columns: repeat(3, 1fr); }
+    main#tip-shop .project section .two-col, main#pacersblog .project section .two-col {
       grid-template-columns: 1fr; }
-      main .project section .two-col .text-side {
+      main#tip-shop .project section .two-col .text-side, main#pacersblog .project section .two-col .text-side {
         padding-top: 0px; }
-    main .project section div.image-first div:nth-of-type(1) {
+    main#tip-shop .project section div.image-first div:nth-of-type(1), main#pacersblog .project section div.image-first div:nth-of-type(1) {
       order: 2; }
-    main .project section div.image-first div:nth-of-type(2) {
+    main#tip-shop .project section div.image-first div:nth-of-type(2), main#pacersblog .project section div.image-first div:nth-of-type(2) {
       order: 1; }
     main .about-info {
       grid-template-areas: "bio-image" "bio" "job1" "job2" "job3";
@@ -364,22 +377,18 @@ main {
       margin-bottom: 1rem; }
     main .projects {
       grid-template-columns: 1fr; }
-    main .project {
-      display: grid;
-      grid-template-columns: 1fr;
-      margin: auto; }
-      main .project img {
-        width: 100%; }
-      main .project section #color_themes {
-        display: none; }
-      main .project section .two-col {
-        grid-template-columns: 1fr; }
-        main .project section .two-col .text-side {
-          padding-top: 0px; }
-      main .project section div.image-first div:nth-of-type(1) {
-        order: 2; }
-      main .project section div.image-first div:nth-of-type(2) {
-        order: 1; }
+    main#tip-shop .project section #color_themes, main#pacersblog .project section #color_themes {
+      display: none; }
+    main#tip-shop .project section div#color_themes, main#pacersblog .project section div#color_themes {
+      display: none; }
+    main#tip-shop .project section .two-col, main#pacersblog .project section .two-col {
+      grid-template-columns: 1fr; }
+      main#tip-shop .project section .two-col .text-side, main#pacersblog .project section .two-col .text-side {
+        padding-top: 0px; }
+    main#tip-shop .project section div.image-first div:nth-of-type(1), main#pacersblog .project section div.image-first div:nth-of-type(1) {
+      order: 2; }
+    main#tip-shop .project section div.image-first div:nth-of-type(2), main#pacersblog .project section div.image-first div:nth-of-type(2) {
+      order: 1; }
     main .about-info {
       grid-template-areas: "bio-image" "bio" "job1" "job2" "job3";
       grid-template-columns: 1fr; }
