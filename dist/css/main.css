@@ -257,6 +257,8 @@ main {
   .projects .item {
     margin: auto;
     width: 400px; }
+  .projects #tip-shop_thumbnail {
+    width: 250px; }
 
 .boxes {
   display: flex;
