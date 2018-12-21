@@ -43,21 +43,18 @@
       line-height: 1;
       margin-bottom: 2rem;
     }
-    .sm-heading {
-      // display: none;
-    }
     .projects {
       grid-template-columns: repeat(1, 1fr);
     }
-
+    
+    &#tip-shop, &#pacersblog {
     .project {
-      div#color_themes {
-        grid-template-columns: 1fr 1fr 1fr;
-      }
+
       section {
-        #color_themes {
-          // display: none;
+        div#color_themes {
+          grid-template-columns: repeat(3, 1fr);
         }
+  
         .two-col {
           grid-template-columns: 1fr;
           .text-side {
@@ -72,6 +69,7 @@
         }
       }
     }
+  }
     .about-info {
       grid-template-areas:
         "bio-image"
@@ -135,27 +133,21 @@
       font-size: 5rem;
       margin-bottom: 1rem;
     }
-    .sm-heading {
-      // display: none;
-    }
-    #work .lg-heading h1 {
-    }
+
+
+
     .projects {
       grid-template-columns: 1fr;
     }
 
+    &#tip-shop, &#pacersblog   {
     .project {
-      display: grid;
-      grid-template-columns: 1fr;
-      // max-width: 1500px;
-      margin: auto;
-
-      img {
-        width: 100%;
-      }
 
       section {
         #color_themes {
+          display: none;
+        }
+        div#color_themes{
           display: none;
         }
         .two-col {
@@ -173,7 +165,7 @@
         }
       }
     }
-
+  }
     .about-info {
       grid-template-areas:
         "bio-image"
