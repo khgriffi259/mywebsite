@@ -110,6 +110,9 @@ body {
       z-index: -1;
       background: rgba(0, 45, 98, 0.9); }
 
+img {
+  width: 100%; }
+
 h1,
 h2,
 h3 {
@@ -251,6 +254,11 @@ main {
       opacity: 0.5;
       border-color: #fdbb30;
       transition: all 0.5s ease-out; }
+  .projects .item {
+    margin: auto;
+    width: 400px; }
+  .projects #tip-shop_thumbnail {
+    width: 250px; }
 
 .boxes {
   display: flex;
