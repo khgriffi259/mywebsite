@@ -295,9 +295,6 @@ main {
 .btn-light {
   background: #fff;
   color: #333; }
-  .btn-light:hover {
-    background: black;
-    color: white; }
 
 #main-footer {
   text-align: center;
