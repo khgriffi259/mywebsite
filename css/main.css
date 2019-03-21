@@ -109,6 +109,10 @@ body {
       background: #002d62;
       z-index: -1;
       background: rgba(0, 45, 98, 0.9); }
+  body p, body li {
+    font-size: 18px; }
+  body#vendingmachine {
+    background: black; }
 
 img {
   width: 100%; }
@@ -126,8 +130,7 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2 rem 1 rem;
-    background: rgba(0, 50, 108, 0.4); }
+    padding: 0.2 rem 1 rem; }
 
 a {
   color: #fff;
@@ -186,17 +189,17 @@ main {
             margin: auto;
             display: block;
             padding: 1rem; }
-  main#pacersblog {
+  main#pacersblog, main#vendingmachine {
     padding: 2rem; }
-    main#pacersblog .project section {
+    main#pacersblog .project section, main#vendingmachine .project section {
       padding: 1rem 0.5rems; }
-      main#pacersblog .project section .two-col {
+      main#pacersblog .project section .two-col, main#vendingmachine .project section .two-col {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 0.7rem; }
-        main#pacersblog .project section .two-col .text-side {
+        main#pacersblog .project section .two-col .text-side, main#vendingmachine .project section .two-col .text-side {
           padding-top: 100px; }
-        main#pacersblog .project section .two-col img {
+        main#pacersblog .project section .two-col img, main#vendingmachine .project section .two-col img {
           object-fit: cover;
           object-position: top;
           width: 100%;
@@ -239,26 +242,23 @@ main {
 
 .projects {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 0.7rem;
-  margin: auto; }
-  .projects .picture-links {
-    display: block;
-    height: 250px;
-    margin-bottom: 2rem; }
-  .projects img {
-    width: 100%;
-    max-height: 100%;
-    object-fit: contain; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #fdbb30;
-      transition: all 0.5s ease-out; }
-  .projects .item {
-    margin: auto;
-    width: 400px; }
-  .projects #tip-shop_thumbnail {
-    width: 250px; }
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 10px; }
+  .projects .project-item {
+    width: 400px;
+    padding: 15px; }
+    .projects .project-item .picture-link img {
+      width: 100%; }
+      .projects .project-item .picture-link img:hover {
+        opacity: 0.5;
+        border-color: #fdbb30;
+        transition: all 0.5s ease-out; }
+    .projects .project-item .picture-link .square-picture {
+      height: 246px;
+      object-fit: contain; }
+    .projects .project-item .project_github-links {
+      margin-top: 15px; }
 
 .boxes {
   display: flex;
@@ -298,20 +298,9 @@ main {
 
 #main-footer {
   text-align: center;
-  background: #002653;
   padding: 1rem;
   color: #fff;
   height: 60px; }
-
-@media screen and (min-width: 1171px) {
-  main .projects {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr; }
-    main .projects img {
-      height: 300px;
-      object-fit: contain; }
-  main .project {
-    grid-template-columns: repeat(1, 1fr); } }
 
 @media screen and (min-width: 901px) and (max-width: 1170px) {
   main .projects {
@@ -332,15 +321,19 @@ main {
       margin-bottom: 2rem; }
     main .projects {
       grid-template-columns: repeat(1, 1fr); }
-    main#tip-shop .project section div#color_themes, main#pacersblog .project section div#color_themes {
+      main .projects .project-item {
+        width: 600px; }
+        main .projects .project-item .square-picture {
+          height: 400px; }
+    main#tip-shop .project section div#color_themes, main#pacersblog .project section div#color_themes, main#vendingmachine .project section div#color_themes {
       grid-template-columns: repeat(3, 1fr); }
-    main#tip-shop .project section .two-col, main#pacersblog .project section .two-col {
+    main#tip-shop .project section .two-col, main#pacersblog .project section .two-col, main#vendingmachine .project section .two-col {
       grid-template-columns: 1fr; }
-      main#tip-shop .project section .two-col .text-side, main#pacersblog .project section .two-col .text-side {
+      main#tip-shop .project section .two-col .text-side, main#pacersblog .project section .two-col .text-side, main#vendingmachine .project section .two-col .text-side {
         padding-top: 0px; }
-    main#tip-shop .project section div.image-first div:nth-of-type(1), main#pacersblog .project section div.image-first div:nth-of-type(1) {
+    main#tip-shop .project section div.image-first div:nth-of-type(1), main#pacersblog .project section div.image-first div:nth-of-type(1), main#vendingmachine .project section div.image-first div:nth-of-type(1) {
       order: 2; }
-    main#tip-shop .project section div.image-first div:nth-of-type(2), main#pacersblog .project section div.image-first div:nth-of-type(2) {
+    main#tip-shop .project section div.image-first div:nth-of-type(2), main#pacersblog .project section div.image-first div:nth-of-type(2), main#vendingmachine .project section div.image-first div:nth-of-type(2) {
       order: 1; }
     main .about-info {
       grid-template-areas: "bio-image" "bio" "job1" "job2" "job3";
@@ -382,17 +375,17 @@ main {
       margin-bottom: 1rem; }
     main .projects {
       grid-template-columns: 1fr; }
-    main#tip-shop .project section #color_themes, main#pacersblog .project section #color_themes {
+    main#tip-shop .project section #color_themes, main#pacersblog .project section #color_themes, main#vendingmachine .project section #color_themes {
       display: none; }
-    main#tip-shop .project section div#color_themes, main#pacersblog .project section div#color_themes {
+    main#tip-shop .project section div#color_themes, main#pacersblog .project section div#color_themes, main#vendingmachine .project section div#color_themes {
       display: none; }
-    main#tip-shop .project section .two-col, main#pacersblog .project section .two-col {
+    main#tip-shop .project section .two-col, main#pacersblog .project section .two-col, main#vendingmachine .project section .two-col {
       grid-template-columns: 1fr; }
-      main#tip-shop .project section .two-col .text-side, main#pacersblog .project section .two-col .text-side {
+      main#tip-shop .project section .two-col .text-side, main#pacersblog .project section .two-col .text-side, main#vendingmachine .project section .two-col .text-side {
         padding-top: 0px; }
-    main#tip-shop .project section div.image-first div:nth-of-type(1), main#pacersblog .project section div.image-first div:nth-of-type(1) {
+    main#tip-shop .project section div.image-first div:nth-of-type(1), main#pacersblog .project section div.image-first div:nth-of-type(1), main#vendingmachine .project section div.image-first div:nth-of-type(1) {
       order: 2; }
-    main#tip-shop .project section div.image-first div:nth-of-type(2), main#pacersblog .project section div.image-first div:nth-of-type(2) {
+    main#tip-shop .project section div.image-first div:nth-of-type(2), main#pacersblog .project section div.image-first div:nth-of-type(2), main#vendingmachine .project section div.image-first div:nth-of-type(2) {
       order: 1; }
     main .about-info {
       grid-template-areas: "bio-image" "bio" "job1" "job2" "job3";
