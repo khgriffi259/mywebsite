@@ -117,6 +117,11 @@ body {
 img {
   width: 100%; }
 
+.single-pic {
+  width: 75%;
+  display: block;
+  margin: auto; }
+
 h1,
 h2,
 h3 {
@@ -189,17 +194,17 @@ main {
             margin: auto;
             display: block;
             padding: 1rem; }
-  main#pacersblog, main#vendingmachine {
+  main#pacersblog, main#vendingmachine, main#shoporders, main#unitnumbers, main#recipes {
     padding: 2rem; }
-    main#pacersblog .project section, main#vendingmachine .project section {
+    main#pacersblog .project section, main#vendingmachine .project section, main#shoporders .project section, main#unitnumbers .project section, main#recipes .project section {
       padding: 1rem 0.5rems; }
-      main#pacersblog .project section .two-col, main#vendingmachine .project section .two-col {
+      main#pacersblog .project section .two-col, main#vendingmachine .project section .two-col, main#shoporders .project section .two-col, main#unitnumbers .project section .two-col, main#recipes .project section .two-col {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 0.7rem; }
-        main#pacersblog .project section .two-col .text-side, main#vendingmachine .project section .two-col .text-side {
+        main#pacersblog .project section .two-col .text-side, main#vendingmachine .project section .two-col .text-side, main#shoporders .project section .two-col .text-side, main#unitnumbers .project section .two-col .text-side, main#recipes .project section .two-col .text-side {
           padding-top: 100px; }
-        main#pacersblog .project section .two-col img, main#vendingmachine .project section .two-col img {
+        main#pacersblog .project section .two-col img, main#vendingmachine .project section .two-col img, main#shoporders .project section .two-col img, main#unitnumbers .project section .two-col img, main#recipes .project section .two-col img {
           object-fit: cover;
           object-position: top;
           width: 100%;

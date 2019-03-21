@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <title>Unit Number Solver</title>
 </head>
@@ -40,7 +40,7 @@
         </nav>
     </header>
 
-    <main id="">
+    <main id="unitnumbers">
         <h1 class="lg-heading">
             My
             <span class="text-secondary">Work</span>
@@ -48,32 +48,40 @@
         <h2 class="sm-heading">
             Unit Number Solver
         </h2>
-
-        <div class="project">
-            <div class="item">
-                <a href="#">
-                    <img src="img/projects/unit_numbers1.jpeg" alt="project">
-                </a>
-            </div>
-            <p>Several trailers required unit numbers to be installed on the walls individually. It was the processor's job
-                to order the correct quantity of each unit number necessary for each trailer, which was tedious and could
+        <hr>
+            <p>Trailers required unit numbers to be installed. The correct quantity of each unit number had to be ordered, which was tedious and
+                could
                 get complicated very quickly. Hence, I developed the unit number solver macro. See key features below:
             </p>
-            <ul->
-                <li>Used an event listener to automatically highlight the required characters and quantities required based on
-                    the string of characters entered by the user</li>
-                <li>Used a Vlookup to provide the part number of the unit number character</li>
-            </ul->
 
-        </div>
+            <li>Used an event listener to automatically highlight the required characters and quantities needed based
+                on
+                the string of characters entered by the user</li>
+            <li>Used a Vlookup to provide the unit # part numbers based on the unit # type selected in the dropdown menu</li>
 
-    </main>
+            <hr>
+            <div class="project">
 
-    <footer id="main-footer">
-        Copyright &copy; 2018
-    </footer>
+                <section>
+                    <div class="two-col text-first">
+                        <div class="text-side">
+                            <h1>Highlights characters and quantities needed </h1>
+                            <p>
+                                Utilized a worksheet change function to automatically highlight characters and quantities needed. 
+                            </p>
+                        </div>
+                        <div class="image-side">
+                            <img src="img/projects/unit_numbers1.jpeg" alt="project">
+                        </div>
+                    </div>
+                </section>
+        </main>
 
-    <script src="js/main.js"></script>
+        <footer id="main-footer">
+            Copyright &copy; 2018
+        </footer>
+
+        <script src="js/main.js"></script>
 </body>
 
 </html>
