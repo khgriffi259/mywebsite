@@ -1,21 +1,9 @@
 //Widescreens
 @include mediaXl {
   main {
-    .projects {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 1fr 1fr;
-      img {
-        height: 300px;
-        object-fit: contain;
-      }
-    }
-    .project {
-      grid-template-columns: repeat(1, 1fr);
-      // grid-template-columns: 1fr;
-    }
-  }
+    
 }
-
+}
 @include mediaLg {
   main {
     .projects {
@@ -45,9 +33,18 @@
     }
     .projects {
       grid-template-columns: repeat(1, 1fr);
+
+      .project-item{
+        width: 600px;
+
+        .square-picture{
+          height: 400px;
+        }
+      }
+
     }
     
-    &#tip-shop, &#pacersblog {
+    &#tip-shop, &#pacersblog, &#vendingmachine {
     .project {
 
       section {
@@ -61,6 +58,7 @@
             padding-top: 0px;
           }
         }
+
         div.image-first div:nth-of-type(1) {
           order: 2;
         }
@@ -132,17 +130,21 @@
       margin-top: 1rem;
       font-size: 5rem;
       margin-bottom: 1rem;
+      // text-align: center;
     }
 
-
+    .sm-heading{
+      // text-align: center;
+    }
 
     .projects {
       grid-template-columns: 1fr;
     }
 
-    &#tip-shop, &#pacersblog   {
-    .project {
+    &#tip-shop, &#pacersblog, &#vendingmachine   {
 
+      .project {
+        
       section {
         #color_themes {
           display: none;

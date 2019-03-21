@@ -12,6 +12,16 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+  
+
+  p, li{
+    font-size: 18px;
+  }
+
+  &#vendingmachine{
+    background: black;
+  }
+
 }
 
 img {
@@ -32,7 +42,7 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2 rem 1 rem;
-    background: rgba(lighten($primary-color, 2), 0.4);
+    // background: rgba(lighten($primary-color, 2), 0.4);
   }
 }
 
@@ -65,6 +75,7 @@ main {
     margin-bottom: 25px;
   }
 
+ 
   .icons {
     margin-top: 1rem;
 
@@ -80,17 +91,15 @@ main {
 
   &#tip-shop {
     padding: 2rem;
-    
+    // h1{
+    //   font-size: 2em;
+    // }
+    // p{
+    //   font-size: 20px;
+    // }
     .project {
       display: grid;
       grid-template-columns: 1fr;
-      // grid-gap: 0.7rem;
-      // // max-width: 1500px;
-      // margin: auto;
-    
-      // img {
-      //   width: 100%;
-      // }
     
       section {
               
@@ -131,7 +140,7 @@ main {
     }
   }
 
-  &#pacersblog {
+  &#pacersblog, &#vendingmachine{
     padding: 2rem;
     
     .project {
@@ -147,9 +156,14 @@ main {
     
             .text-side {
               padding-top: 100px;
-              // text-align: right;
+                h1{
+                  // font-size: 2em;
+                }
+                p{
+                  // font-size: 20px;
+               }
             }
-            
+             
             img {
               object-fit: cover;
               object-position: top;
@@ -160,10 +174,55 @@ main {
               display: block;
               padding: 1rem;
             }
+
+
+
+            
         }
       }
     }
   }
+
+  // &#vendingmachine{
+  //   padding: 2rem;
+
+  //   .project {
+      
+  //     section {
+              
+  //         padding: 1rem 0.5rems;
+        
+  //         .two-col {
+  //           display: grid;
+  //           grid-template-columns: repeat(2, 1fr);
+  //           grid-gap: 0.7rem;
+    
+  //           .text-side {
+  //             padding-top: 100px;
+  //             // text-align: right;
+  //             h1{
+  //               font-size: 2em;
+  //             }
+  //             p{
+  //               font-size: 20px;
+  //             }
+  //           }
+            
+  //           img {
+  //             object-fit: contain;
+  //             object-position: top;
+  //             width: 100%;
+  //             max-height: 500px;
+  //             // max-height: 100%;
+  //             margin: auto;
+  //             display: block;
+  //             padding: 1rem;
+  //           }
+            
+  //       }
+  //     }
+  //   }
+  // }
 
 
   &#home {
@@ -218,47 +277,38 @@ main {
 //work/projects
 .projects {
   display: grid;
-  // grid-template-columns: repeat(3, 1fr);
-  grid-template-columns: 1fr;
-  grid-gap: 0.7rem;
-  // max-width: 1500px;
-  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 10px;
 
-  .picture-links {
-    display: block;
-    height: 250px;
-    margin-bottom: 2rem;
-  }
-  img {
-    width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    // border: 3px solid #fff;
-    &:hover {
-      opacity: 0.5;
-      border-color: $secondary-color;
-      @include easeOut;
-    }
-  }
-
-  .item{
-    margin: auto; 
-    width: 400px;
-    // margin-bottom: 1rem;  
-  }
-  // #pacers_thumbnail{
-  //   width: 375px;
-  // }
-  #tip-shop_thumbnail{
-    width: 250px;
-  }
-  // #recipes_thumbnail{
-  //   width: 375px;
-  // }
+  .project-item{
   
+    width: 400px;
+    padding: 15px;
+  
+    .picture-link{ 
+      img {
+        width: 100%;
+        // max-height: 250px;
+        &:hover {
+          opacity: 0.5;
+          border-color: $secondary-color;
+          @include easeOut;
+        }
+      }
+      .square-picture {
+        height: 246px;
+        object-fit: contain;
+      }
 
+    }
+      .project_github-links{
+        margin-top: 15px;
+
+      }
+      
+  }
 }
-
 
 
 //Contact Page
@@ -320,7 +370,6 @@ main {
 
 #main-footer {
   text-align: center;
-  background: darken($primary-color, 3);
   padding: 1rem;
   color: set-text-color($primary-color);
   height: 60px;
