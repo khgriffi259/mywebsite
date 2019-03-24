@@ -330,15 +330,15 @@ main {
         width: 600px; }
         main .projects .project-item .square-picture {
           height: 400px; }
-    main#tip-shop .project section div#color_themes, main#pacersblog .project section div#color_themes, main#vendingmachine .project section div#color_themes {
+    main#tip-shop .project section div#color_themes, main#pacersblog .project section div#color_themes, main#vendingmachine .project section div#color_themes, main#recipes .project section div#color_themes, main#shoporders .project section div#color_themes, main#unitnumbers .project section div#color_themes {
       grid-template-columns: repeat(3, 1fr); }
-    main#tip-shop .project section .two-col, main#pacersblog .project section .two-col, main#vendingmachine .project section .two-col {
+    main#tip-shop .project section .two-col, main#pacersblog .project section .two-col, main#vendingmachine .project section .two-col, main#recipes .project section .two-col, main#shoporders .project section .two-col, main#unitnumbers .project section .two-col {
       grid-template-columns: 1fr; }
-      main#tip-shop .project section .two-col .text-side, main#pacersblog .project section .two-col .text-side, main#vendingmachine .project section .two-col .text-side {
+      main#tip-shop .project section .two-col .text-side, main#pacersblog .project section .two-col .text-side, main#vendingmachine .project section .two-col .text-side, main#recipes .project section .two-col .text-side, main#shoporders .project section .two-col .text-side, main#unitnumbers .project section .two-col .text-side {
         padding-top: 0px; }
-    main#tip-shop .project section div.image-first div:nth-of-type(1), main#pacersblog .project section div.image-first div:nth-of-type(1), main#vendingmachine .project section div.image-first div:nth-of-type(1) {
+    main#tip-shop .project section div.image-first div:nth-of-type(1), main#pacersblog .project section div.image-first div:nth-of-type(1), main#vendingmachine .project section div.image-first div:nth-of-type(1), main#recipes .project section div.image-first div:nth-of-type(1), main#shoporders .project section div.image-first div:nth-of-type(1), main#unitnumbers .project section div.image-first div:nth-of-type(1) {
       order: 2; }
-    main#tip-shop .project section div.image-first div:nth-of-type(2), main#pacersblog .project section div.image-first div:nth-of-type(2), main#vendingmachine .project section div.image-first div:nth-of-type(2) {
+    main#tip-shop .project section div.image-first div:nth-of-type(2), main#pacersblog .project section div.image-first div:nth-of-type(2), main#vendingmachine .project section div.image-first div:nth-of-type(2), main#recipes .project section div.image-first div:nth-of-type(2), main#shoporders .project section div.image-first div:nth-of-type(2), main#unitnumbers .project section div.image-first div:nth-of-type(2) {
       order: 1; }
     main .about-info {
       grid-template-areas: "bio-image" "bio" "job1" "job2" "job3";
@@ -380,17 +380,17 @@ main {
       margin-bottom: 1rem; }
     main .projects {
       grid-template-columns: 1fr; }
-    main#tip-shop .project section #color_themes, main#pacersblog .project section #color_themes, main#vendingmachine .project section #color_themes {
+    main#tip-shop .project section #color_themes, main#pacersblog .project section #color_themes, main#vendingmachine .project section #color_themes, main#recipes .project section #color_themes, main#shoporders .project section #color_themes, main#unitnumbers .project section #color_themes {
       display: none; }
-    main#tip-shop .project section div#color_themes, main#pacersblog .project section div#color_themes, main#vendingmachine .project section div#color_themes {
+    main#tip-shop .project section div#color_themes, main#pacersblog .project section div#color_themes, main#vendingmachine .project section div#color_themes, main#recipes .project section div#color_themes, main#shoporders .project section div#color_themes, main#unitnumbers .project section div#color_themes {
       display: none; }
-    main#tip-shop .project section .two-col, main#pacersblog .project section .two-col, main#vendingmachine .project section .two-col {
+    main#tip-shop .project section .two-col, main#pacersblog .project section .two-col, main#vendingmachine .project section .two-col, main#recipes .project section .two-col, main#shoporders .project section .two-col, main#unitnumbers .project section .two-col {
       grid-template-columns: 1fr; }
-      main#tip-shop .project section .two-col .text-side, main#pacersblog .project section .two-col .text-side, main#vendingmachine .project section .two-col .text-side {
+      main#tip-shop .project section .two-col .text-side, main#pacersblog .project section .two-col .text-side, main#vendingmachine .project section .two-col .text-side, main#recipes .project section .two-col .text-side, main#shoporders .project section .two-col .text-side, main#unitnumbers .project section .two-col .text-side {
         padding-top: 0px; }
-    main#tip-shop .project section div.image-first div:nth-of-type(1), main#pacersblog .project section div.image-first div:nth-of-type(1), main#vendingmachine .project section div.image-first div:nth-of-type(1) {
+    main#tip-shop .project section div.image-first div:nth-of-type(1), main#pacersblog .project section div.image-first div:nth-of-type(1), main#vendingmachine .project section div.image-first div:nth-of-type(1), main#recipes .project section div.image-first div:nth-of-type(1), main#shoporders .project section div.image-first div:nth-of-type(1), main#unitnumbers .project section div.image-first div:nth-of-type(1) {
       order: 2; }
-    main#tip-shop .project section div.image-first div:nth-of-type(2), main#pacersblog .project section div.image-first div:nth-of-type(2), main#vendingmachine .project section div.image-first div:nth-of-type(2) {
+    main#tip-shop .project section div.image-first div:nth-of-type(2), main#pacersblog .project section div.image-first div:nth-of-type(2), main#vendingmachine .project section div.image-first div:nth-of-type(2), main#recipes .project section div.image-first div:nth-of-type(2), main#shoporders .project section div.image-first div:nth-of-type(2), main#unitnumbers .project section div.image-first div:nth-of-type(2) {
       order: 1; }
     main .about-info {
       grid-template-areas: "bio-image" "bio" "job1" "job2" "job3";
