@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Pacers Blog (Final Project)</title>
+    <title>React Pacers Blog</title>
   </head>
 
   <body id="">
@@ -43,15 +43,15 @@
 
     <main id="pacersblog">
       <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
-      <h2 class="sm-heading">Pacers Blog</h2>
+      <h2 class="sm-heading">React Pacers Blog</h2>
       <hr>
 
-      <p>This is my final project I completed for my web development certificate and uses the MVC design pattern.  The technologies used to create this amazing web application are:</p>
-      <li>PHP</li>
+      <p>This is a React/Redux version of the previous pacers blog project I did for my final project at IUPUI.  The technologies used to create this amazing web application are:</p>
+      <li>React</li>
+      <li>Redux</li>
+      <li>Firebase</li>
       <li>Javascript</li>
-      <li>JQuery</li>
-      <li>MySQL</li>
-      <li>Bootstrap</li>
+      <li>Materialize</li>
 
       <hr>
       <div class="project">
@@ -59,14 +59,15 @@
         <section>
           <div class="two-col text-first">
             <div class="text-side">
-              <h1 class="text-secondary">Read the latest stories from abc.com</h1>
-              <p>
-                The top stories from abc.go.com are automatically populated on the homepage for your viewing pleasure.
-              </p>
+              <h1 class="text-secondary">Read Blog Posts from Other Users! </h1>
+              <br>
+              <li>
+                Dasboard shows activity from all registered users including blog posts and notifications.
+              </li>
             </div>
             <div class="image-side">
               <img
-                src="img/projects/pacers_blog/pacersblog.jpeg"
+                src="img/projects/react_pacers_blog/dashboard.png"
                 alt="Pacers blog 1"
               />
             </div>
@@ -77,21 +78,18 @@
           <div class="two-col image-first">
             <div class="image-side">
               <img
-                src="img/projects/pacers_blog/pacersblog2.jpeg"
+                src="img/projects/react_pacers_blog/sign_up.png"
                 alt="Pacers Blog 2"
               />
             </div>
             <div class="text-side">
-              <h1 class="text-secondary">Full CRUD Capability</h1>
+              <h1 class="text-secondary">Firebase Authentication</h1>
               <br>
                <li>
-                  Create, update, and delete posts.  
+                  Register as a user on the web app
                </li> 
                <li>
-                  Add, update, and delete comments on posts.
-               </li> 
-               <li>
-                  Register as a user on the site
+                  Utilizes Firebase Authentication to track registerd users and when a given user is logged in
                </li> 
             </div>
           </div>
@@ -100,19 +98,63 @@
         <section>
           <div class="two-col text-first">
             <div class="text-side">
-              <h1 class="text-secondary">My SQL</h1>
+              <h1 class="text-secondary">Create Blog Posts</h1>
               <p>
-                The web blog incorporates a MySQL database to save users, posts, and comments. 
+                Once signed up and logged in to the web application, create blog posts to share with other users.
               </p>
             </div>
             <div class="image-side">
               <img
-                src="img/projects/pacers_blog/phpmyadmin.jpeg"
+                src="img/projects/react_pacers_blog/create_blog.png"
                 alt="Tip-Shop #1"
               />
             </div>
           </div>
         </section>
+
+        <section>
+          <div class="two-col image-first">
+            <div class="image-side">
+              <img
+                src="img/projects/react_pacers_blog/notifications.png"
+                alt="Pacers Blog 2"
+              />
+            </div>
+            <div class="text-side">
+              <h1 class="text-secondary">Firebase Cloud Functions</h1>
+              <br>
+               <li>
+                  Utilizes firebase cloud functions to deliver real time data.
+               </li> 
+               <ul style="margin:.3em !important; list-style-type: square;">
+                 <li>
+                    Real time notifications when users sign up
+                 </li> 
+                 <li>
+                    Real time notifications when users create blog posts
+                 </li> 
+               </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="two-col text-first">
+            <div class="text-side">
+              <h1 class="text-secondary">Firestore Database</h1>
+              <p>
+                Web Application utilizes the firestore database to store blog posts and notifications.
+              </p>
+            </div>
+            <div class="image-side">
+              <img
+                src="img/projects/react_pacers_blog/firestore1.png"
+                alt="Tip-Shop #1"
+              />
+            </div>
+          </div>
+        </section>
+
 
       </div>
     </main>
