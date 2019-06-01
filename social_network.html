@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>DevConnector - Social Network</title>
+</head>
+
+<body id="">
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item current">
+          <a href="about.html" class="nav-link">About me</a>
+        </li>
+        <li class="nav-item">
+          <a href="work.html" class="nav-link current">My Work</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">How To Reach Me</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="pacersblog">
+    <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
+    <h2 class="sm-heading">DevConnector - Social Network</h2>
+    <hr>
+
+    <p>This is a networking site I built using the core elements of web development: HTML, CSS, and vanilla Javascript.
+      The backend is powered by Google Firebase. I learned a lot during this project utilizing technologies such as
+      webpack, babel, and CSS loaders.  A lot of the things I thought were specific to React, were actually just Javascript. </p>
+
+    <li>Javascript</li>
+    <li>Firebase</li>
+    <li>Webpack</li>
+    <li>Sass</li>
+    <li>CSS Loaders</li>
+
+    <hr>
+    <div class="project">
+
+      <section>
+        <div class="two-col text-first">
+          <div class="text-side">
+            <h1 class="text-secondary">Real Time Data</h1>
+            <br>
+            <ul>
+              <li>
+                Not using a front end framework, such as React, makes it a little more difficult to refresh the page when
+                data has changed. This app uses Firebase Real time database to circumvent this issue. Users can add past
+                experiences and education, which update on the dashboard in real time.
+              </li>
+            </ul>
+          </div>
+          <div class="image-side">
+            <img src="img/projects/social_network/dashboard.png" alt="Pacers blog 1" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="two-col image-first">
+          <div class="image-side">
+            <img src="img/projects/social_network/popup.png" alt="Pacers Blog 2" />
+          </div>
+          <div class="text-side">
+            <h1 class="text-secondary">Custom Popup Box Class</h1>
+            <br>
+            <ul>
+              <li>
+                Overlays the page to confirm an action.  Here it is used to confirm the delete operation.
+              </li>
+              <li>
+                Utilizes CSS loaders to style the popup
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+        <div class="two-col text-first">
+          <div class="text-side">
+              <h1 class="text-secondary">Firebase Authentication</h1>
+              <br>
+              <ul>
+                <li>
+                    Register as a user on the web app
+                  </li>
+                  <li>
+                    Utilizes Firebase Authentication to track registerd users and when a given user is logged in
+                  </li>
+              </ul>
+          </div>
+          <div class="image-side">
+            <img src="img/projects/social_network/sign_up.png" alt="Tip-Shop #1" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+          <div class="two-col image-first">
+            <div class="image-side">
+              <img src="img/projects/social_network/profiles.png" alt="Pacers Blog 2" />
+            </div>
+            <div class="text-side">
+              <h1 class="text-secondary">View Profiles of Registered Users</h1>
+              <br>
+              <ul>
+                <li>
+                  Convenient link to easily view the profiles of fellow developers!
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        
+        <section>
+            <div class="two-col text-first">
+              <div class="text-side">
+                  <h1 class="text-secondary">View Profile Details</h1>
+                  <br>
+                  <p>Profile details page shows specifics of each user in a nicely formatted layout.</p>
+                </div>
+              <div class="image-side">
+                <img src="img/projects/social_network/profile.png" alt="Tip-Shop #1" />
+              </div>
+            </div>
+          </section>
+
+      <section>
+        <div class="two-col image-first">
+          <div class="image-side">
+            <img src="img/projects/react_pacers_blog/firestore1.png" alt="Tip-Shop #1" />
+          </div>
+          <div class="text-side">
+            <h1 class="text-secondary">Firestore Database</h1>
+            <p>
+              Web Application utilizes the firestore database to experience, education, and in the future posts so users can communicate.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+  </main>
+
+  <footer id="main-footer">Copyright &copy; 2018</footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
