@@ -156,6 +156,11 @@ main {
     
             .text-side {
               padding-top: 100px;
+              
+              ul {
+                list-style-position: outside;
+                margin: 0;
+              }
             }
              
             img {
@@ -167,7 +172,9 @@ main {
               margin: auto;
               display: block;
               padding: 1rem;
-            }        
+            }  
+            
+            
         }
       }
     }

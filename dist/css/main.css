@@ -204,6 +204,9 @@ main {
         grid-gap: 0.7rem; }
         main#pacersblog .project section .two-col .text-side, main#vendingmachine .project section .two-col .text-side, main#shoporders .project section .two-col .text-side, main#unitnumbers .project section .two-col .text-side, main#recipes .project section .two-col .text-side {
           padding-top: 100px; }
+          main#pacersblog .project section .two-col .text-side ul, main#vendingmachine .project section .two-col .text-side ul, main#shoporders .project section .two-col .text-side ul, main#unitnumbers .project section .two-col .text-side ul, main#recipes .project section .two-col .text-side ul {
+            list-style-position: outside;
+            margin: 0; }
         main#pacersblog .project section .two-col img, main#vendingmachine .project section .two-col img, main#shoporders .project section .two-col img, main#unitnumbers .project section .two-col img, main#recipes .project section .two-col img {
           object-fit: cover;
           object-position: top;
