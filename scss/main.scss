@@ -12,7 +12,7 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
-  
+  // width: 100%;
 
   p, li{
     font-size: 18px;
@@ -69,9 +69,7 @@ header {
 
 main {
   padding: 4rem;
-  // height: 100%;
   min-height: calc(100vh - 60px);
-  min-width: 480px;
   max-width: 1500px;
   margin: auto;
 
@@ -133,7 +131,7 @@ main {
               // max-height: 100%;
               margin: auto;
               display: block;
-              padding: 1rem;
+              // padding: 1rem;
             }
         }
       }
@@ -147,20 +145,20 @@ main {
       
       section {
               
-          padding: 1rem 0.5rems;
+          padding: 1rem 0.5rem;
         
           .two-col {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 0.7rem;
-    
+            ul {
+              // list-style-position: outside;
+              margin: 1rem;
+            }
             .text-side {
               padding-top: 100px;
               
-              ul {
-                list-style-position: outside;
-                margin: 0;
-              }
+            
             }
              
             img {
@@ -234,14 +232,14 @@ main {
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  justify-items: center;
+  grid-gap: 3rem;
   padding: 10px;
 
   .project-item{
   
     width: 400px;
-    padding: 15px;
-  
+    
     .picture-link{ 
       img {
         width: 100%;
@@ -260,6 +258,7 @@ main {
     }
       .project_github-links{
         margin-top: 15px;
+        // width: 400px;
 
       }
       
@@ -274,7 +273,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 3rem;
 
   div {
     font-size: 2rem;
