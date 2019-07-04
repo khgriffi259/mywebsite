@@ -400,6 +400,7 @@ main {
         text-align: left; }
   .boxes {
     font-size: .5rem;
+    justify-content: initial;
     margin-top: 2rem; }
     .boxes div {
       margin-bottom: 1rem;
