@@ -111,8 +111,6 @@ body {
       background: rgba(0, 45, 98, 0.9); }
   body p, body li {
     font-size: 18px; }
-  body#vendingmachine {
-    background: black; }
 
 img {
   width: 100%; }
@@ -165,53 +163,38 @@ main {
       main .icons a:hover {
         color: #fdbb30;
         transition: all 0.5s ease-out; }
-  main#tip-shop {
-    padding: 2rem; }
-    main#tip-shop .project {
+  main .project section {
+    background: #00397c;
+    border-bottom: 5px solid #fdbb30;
+    margin-bottom: 3rem;
+    padding: 2rem 0.5rem; }
+    main .project section div#color_themes {
       display: grid;
-      grid-template-columns: 1fr; }
-      main#tip-shop .project section {
-        padding: 1rem 0.5rems; }
-        main#tip-shop .project section div#color_themes {
-          display: grid;
-          grid-template-columns: repeat(5, 1fr);
-          grid-gap: 0.7rem;
-          padding: 1rem 0.5rems; }
-          main#tip-shop .project section div#color_themes img {
-            width: 100%; }
-        main#tip-shop .project section .two-col {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          grid-gap: 0.7rem; }
-          main#tip-shop .project section .two-col .text-side {
-            padding-top: 200px; }
-          main#tip-shop .project section .two-col img {
-            object-fit: cover;
-            object-position: top;
-            width: 75%;
-            max-height: 500px;
-            margin: auto;
-            display: block; }
-  main#pacersblog, main#vendingmachine, main#shoporders, main#unitnumbers, main#recipes {
-    padding: 2rem; }
-    main#pacersblog .project section, main#vendingmachine .project section, main#shoporders .project section, main#unitnumbers .project section, main#recipes .project section {
-      padding: 1rem 0.5rem; }
-      main#pacersblog .project section .two-col, main#vendingmachine .project section .two-col, main#shoporders .project section .two-col, main#unitnumbers .project section .two-col, main#recipes .project section .two-col {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 0.7rem; }
-        main#pacersblog .project section .two-col ul, main#vendingmachine .project section .two-col ul, main#shoporders .project section .two-col ul, main#unitnumbers .project section .two-col ul, main#recipes .project section .two-col ul {
-          margin: 1rem; }
-        main#pacersblog .project section .two-col .text-side, main#vendingmachine .project section .two-col .text-side, main#shoporders .project section .two-col .text-side, main#unitnumbers .project section .two-col .text-side, main#recipes .project section .two-col .text-side {
-          padding-top: 100px; }
-        main#pacersblog .project section .two-col img, main#vendingmachine .project section .two-col img, main#shoporders .project section .two-col img, main#unitnumbers .project section .two-col img, main#recipes .project section .two-col img {
-          object-fit: cover;
-          object-position: top;
-          width: 100%;
-          max-height: 500px;
-          margin: auto;
-          display: block;
-          padding: 1rem; }
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 0.7rem;
+      padding: 1rem 0.5rems; }
+    main .project section .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0.7rem; }
+      main .project section .two-col ul {
+        margin: 1rem; }
+      main .project section .two-col .text-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+      main .project section .two-col img {
+        object-fit: cover;
+        object-position: top;
+        max-height: 500px;
+        margin: auto;
+        display: block;
+        padding: 1rem; }
+      main .project section .two-col img#mobile-rps {
+        max-height: initial;
+        width: 300px; }
+  main .project section.tip-shop img {
+    width: 300px; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -319,22 +302,23 @@ main {
 
 @media screen and (min-width: 501px) and (max-width: 900px) {
   main {
-    align-items: center;
-    text-align: center; }
+    align-items: center; }
     main .lg-heading {
       line-height: 1;
       margin-bottom: 2rem; }
     main .projects {
       grid-template-columns: repeat(1, 1fr); }
-    main#tip-shop .project section div#color_themes, main#pacersblog .project section div#color_themes, main#vendingmachine .project section div#color_themes, main#recipes .project section div#color_themes, main#shoporders .project section div#color_themes, main#unitnumbers .project section div#color_themes {
-      grid-template-columns: repeat(3, 1fr); }
-    main#tip-shop .project section .two-col, main#pacersblog .project section .two-col, main#vendingmachine .project section .two-col, main#recipes .project section .two-col, main#shoporders .project section .two-col, main#unitnumbers .project section .two-col {
+    main .project hr {
+      display: none; }
+    main .project section#color_themes {
+      display: none; }
+    main .project section .two-col {
       grid-template-columns: 1fr; }
-      main#tip-shop .project section .two-col .text-side, main#pacersblog .project section .two-col .text-side, main#vendingmachine .project section .two-col .text-side, main#recipes .project section .two-col .text-side, main#shoporders .project section .two-col .text-side, main#unitnumbers .project section .two-col .text-side {
+      main .project section .two-col .text-side {
         padding-top: 0px; }
-    main#tip-shop .project section div.image-first div:nth-of-type(1), main#pacersblog .project section div.image-first div:nth-of-type(1), main#vendingmachine .project section div.image-first div:nth-of-type(1), main#recipes .project section div.image-first div:nth-of-type(1), main#shoporders .project section div.image-first div:nth-of-type(1), main#unitnumbers .project section div.image-first div:nth-of-type(1) {
+    main .project section div.image-first div:nth-of-type(1) {
       order: 2; }
-    main#tip-shop .project section div.image-first div:nth-of-type(2), main#pacersblog .project section div.image-first div:nth-of-type(2), main#vendingmachine .project section div.image-first div:nth-of-type(2), main#recipes .project section div.image-first div:nth-of-type(2), main#shoporders .project section div.image-first div:nth-of-type(2), main#unitnumbers .project section div.image-first div:nth-of-type(2) {
+    main .project section div.image-first div:nth-of-type(2) {
       order: 1; }
     main .about-info {
       grid-template-areas: "bio-image" "bio" "job1" "job2" "job3";
@@ -371,27 +355,22 @@ main {
       font-size: 5rem;
       margin-bottom: 1rem;
       margin-top: 2rem; }
-    main section {
-      background: #00397c;
-      padding: 1rem;
-      border-bottom: 5px solid #fdbb30;
-      margin-bottom: 3rem; }
     main .projects {
       grid-template-columns: 1fr;
       justify-items: center; }
       main .projects .project-item {
         width: initial; }
-    main#tip-shop .project hr#color_themes, main#pacersblog .project hr#color_themes, main#vendingmachine .project hr#color_themes, main#recipes .project hr#color_themes, main#shoporders .project hr#color_themes, main#unitnumbers .project hr#color_themes {
+    main .project hr#color_themes {
       display: none; }
-    main#tip-shop .project section#color_themes, main#tip-shop .project section #color_themes, main#tip-shop .project section div#color_themes, main#pacersblog .project section#color_themes, main#pacersblog .project section #color_themes, main#pacersblog .project section div#color_themes, main#vendingmachine .project section#color_themes, main#vendingmachine .project section #color_themes, main#vendingmachine .project section div#color_themes, main#recipes .project section#color_themes, main#recipes .project section #color_themes, main#recipes .project section div#color_themes, main#shoporders .project section#color_themes, main#shoporders .project section #color_themes, main#shoporders .project section div#color_themes, main#unitnumbers .project section#color_themes, main#unitnumbers .project section #color_themes, main#unitnumbers .project section div#color_themes {
+    main .project section#color_themes {
       display: none; }
-    main#tip-shop .project section .two-col, main#pacersblog .project section .two-col, main#vendingmachine .project section .two-col, main#recipes .project section .two-col, main#shoporders .project section .two-col, main#unitnumbers .project section .two-col {
+    main .project section .two-col {
       grid-template-columns: 1fr; }
-      main#tip-shop .project section .two-col .text-side, main#pacersblog .project section .two-col .text-side, main#vendingmachine .project section .two-col .text-side, main#recipes .project section .two-col .text-side, main#shoporders .project section .two-col .text-side, main#unitnumbers .project section .two-col .text-side {
+      main .project section .two-col .text-side {
         padding-top: 0px; }
-    main#tip-shop .project section div.image-first div:nth-of-type(1), main#pacersblog .project section div.image-first div:nth-of-type(1), main#vendingmachine .project section div.image-first div:nth-of-type(1), main#recipes .project section div.image-first div:nth-of-type(1), main#shoporders .project section div.image-first div:nth-of-type(1), main#unitnumbers .project section div.image-first div:nth-of-type(1) {
+    main .project section div.image-first div:nth-of-type(1) {
       order: 2; }
-    main#tip-shop .project section div.image-first div:nth-of-type(2), main#pacersblog .project section div.image-first div:nth-of-type(2), main#vendingmachine .project section div.image-first div:nth-of-type(2), main#recipes .project section div.image-first div:nth-of-type(2), main#shoporders .project section div.image-first div:nth-of-type(2), main#unitnumbers .project section div.image-first div:nth-of-type(2) {
+    main .project section div.image-first div:nth-of-type(2) {
       order: 1; }
     main .about-info {
       grid-template-areas: "bio-image" "bio" "job1" "job2" "job3";
