@@ -25,7 +25,7 @@
 @include mediaMd {
   main {
     align-items: center;
-    text-align: center;
+    // text-align: center;
 
     .lg-heading {
       line-height: 1;
@@ -33,18 +33,17 @@
     }
     .projects {
       grid-template-columns: repeat(1, 1fr);
-      // justify-items: center;
-
     }
-    
-    &#tip-shop, &#pacersblog, &#vendingmachine, &#recipes, &#shoporders, &#unitnumbers {
-    .project {
 
+    .project {
+      hr{
+        display: none;
+      }
       section {
-        div#color_themes {
-          grid-template-columns: repeat(3, 1fr);
+
+        &#color_themes {
+          display: none;
         }
-  
         .two-col {
           grid-template-columns: 1fr;
           .text-side {
@@ -58,9 +57,10 @@
         div.image-first div:nth-of-type(2) {
           order: 1;
         }
+
       }
     }
-  }
+
     .about-info {
       grid-template-areas:
         "bio-image"
@@ -114,19 +114,9 @@
 
     .lg-heading {
       line-height: 1.2;
-      // margin-top: 1rem;
       font-size: 5rem;
       margin-bottom: 1rem;
       margin-top: 2rem;
-      // text-align: center;
-    }
-
-    section {
-      background: lighten($primary-color, 5);
-      padding: 1rem;
-      border-bottom: 5px solid $secondary-color;
-      margin-bottom: 3rem;
-      // padding: 0 3rem;
     }
 
     .projects {
@@ -138,37 +128,28 @@
       }
     }
 
-    &#tip-shop, &#pacersblog, &#vendingmachine, &#recipes, &#shoporders, &#unitnumbers   {
-
-      .project {
-        hr#color_themes{
+    .project {
+      hr#color_themes{
+        display: none;
+      }
+      section {
+        &#color_themes{
           display: none;
         }
-        section {
-          &#color_themes, #color_themes, div#color_themes{
-            display: none;
-          }
-          // #color_themes {
-          //   display: none;
-          // }
-          // div#color_themes{
-          //   display: none;
-          // }
-          .two-col {
-            grid-template-columns: 1fr;
-            
-            .text-side {
-              padding-top: 0px;
-            }
-          }
-          div.image-first div:nth-of-type(1) {
-            order: 2;
-          }
-          div.image-first div:nth-of-type(2) {
-            order: 1;
+        .two-col {
+          grid-template-columns: 1fr;
+          
+          .text-side {
+            padding-top: 0px;
           }
         }
-    }
+        div.image-first div:nth-of-type(1) {
+          order: 2;
+        }
+        div.image-first div:nth-of-type(2) {
+          order: 1;
+        }
+      }
   }
     .about-info {
       grid-template-areas:

@@ -18,10 +18,6 @@ body {
     font-size: 18px;
   }
 
-  &#vendingmachine{
-    background: black;
-  }
-
 }
 
 img {
@@ -92,61 +88,22 @@ main {
       }
     }
   }
-
-  &#tip-shop {
-    padding: 2rem;
-  
     .project {
-      display: grid;
-      grid-template-columns: 1fr;
-    
+      
       section {
-              
-          padding: 1rem 0.5rems;
+          background: lighten($primary-color, 5);
+          border-bottom: 5px solid $secondary-color;
+          margin-bottom: 3rem;
     
+          padding: 2rem 0.5rem;
+          
           div#color_themes {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-gap: 0.7rem;
             padding: 1rem 0.5rems;
-    
-            img {
-              width: 100%;
-            }
           }
-          .two-col {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 0.7rem;
-    
-            .text-side {
-              padding-top: 200px;
-            }
-            
-            img {
-              object-fit: cover;
-              object-position: top;
-              width: 75%;
-              max-height: 500px;
-              // max-height: 100%;
-              margin: auto;
-              display: block;
-              // padding: 1rem;
-            }
-        }
-      }
-    }
-  }
-
-  &#pacersblog, &#vendingmachine, &#shoporders, &#unitnumbers, &#recipes {
-    padding: 2rem;
-    
-    .project {
-      
-      section {
-              
-          padding: 1rem 0.5rem;
-        
+          
           .two-col {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -156,27 +113,33 @@ main {
               margin: 1rem;
             }
             .text-side {
-              padding-top: 100px;
-              
-            
+              display: flex;
+              flex-direction: column;
+              // align-items: center;
+              justify-content: center;
             }
              
             img {
               object-fit: cover;
               object-position: top;
-              width: 100%;
               max-height: 500px;
-              // max-height: 100%;
               margin: auto;
               display: block;
               padding: 1rem;
             }  
-            
-            
+            img#mobile-rps{
+              max-height: initial;
+              width: 300px;
+            }
+        }
+      }
+
+      section.tip-shop{
+        img{
+          width: 300px;
         }
       }
     }
-  }
 
 
   &#home {
@@ -243,7 +206,6 @@ main {
     .picture-link{ 
       img {
         width: 100%;
-        // max-height: 250px;
         &:hover {
           opacity: 0.5;
           border-color: $secondary-color;
@@ -277,7 +239,6 @@ main {
 
   div {
     font-size: 2rem;
-    // border: 3px solid white;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     @include easeOut;
@@ -315,12 +276,7 @@ main {
 .btn-light {
   @extend .btn;
   background: #fff;
-  // background: #fdbb30;
   color: #333;
-  // &:hover {
-  //   background: black;
-  //   color: white;
-  // }
 }
 
 #main-footer {
