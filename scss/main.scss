@@ -120,8 +120,8 @@ main {
             }
              
             img {
-              object-fit: cover;
-              object-position: top;
+              object-fit: contain;
+              object-position: center;
               max-height: 500px;
               margin: auto;
               display: block;
