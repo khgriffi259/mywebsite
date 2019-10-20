@@ -124,12 +124,12 @@ main {
             }
             .image-side{
               display: flex;
-              align-content: center;
+              // align-content: center;
               
               img {
-                object-fit: contain;
-                object-position: center;
-                min-width: 350px;
+                // object-fit: contain;
+                // object-position: center;
+                // min-width: 350px;
                 margin: auto;
                 display: block;
                 padding: 1rem;
