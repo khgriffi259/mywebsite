@@ -187,12 +187,8 @@ main {
         justify-content: center;
         padding: 1rem; }
       main .project section .two-col .image-side {
-        display: flex;
-        align-content: center; }
+        display: flex; }
         main .project section .two-col .image-side img {
-          object-fit: contain;
-          object-position: center;
-          min-width: 350px;
           margin: auto;
           display: block;
           padding: 1rem; }
