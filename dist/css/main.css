@@ -179,20 +179,26 @@ main {
       grid-gap: 0.7rem; }
       main .project section .two-col ul {
         margin: 1rem; }
+        main .project section .two-col ul li {
+          margin-bottom: .75rem; }
       main .project section .two-col .text-side {
         display: flex;
         flex-direction: column;
-        justify-content: center; }
-      main .project section .two-col img {
-        object-fit: contain;
-        object-position: center;
-        max-height: 500px;
-        margin: auto;
-        display: block;
+        justify-content: center;
         padding: 1rem; }
-      main .project section .two-col img#mobile-rps {
-        max-height: initial;
-        width: 300px; }
+      main .project section .two-col .image-side {
+        display: flex;
+        align-content: center; }
+        main .project section .two-col .image-side img {
+          object-fit: contain;
+          object-position: center;
+          min-width: 350px;
+          margin: auto;
+          display: block;
+          padding: 1rem; }
+        main .project section .two-col .image-side img#mobile-rps {
+          max-height: initial;
+          width: 300px; }
   main .project section.tip-shop img {
     width: 300px; }
   main#home {
@@ -234,10 +240,11 @@ main {
   justify-items: center;
   grid-gap: 3rem;
   padding: 10px; }
-  .projects .project-item {
-    width: 400px; }
+  .projects .project-item .picture-link {
+    object-fit: cover;
+    object-position: center; }
     .projects .project-item .picture-link img {
-      width: 100%; }
+      max-height: 500px; }
       .projects .project-item .picture-link img:hover {
         opacity: 0.5;
         border-color: #fdbb30;
@@ -245,8 +252,8 @@ main {
     .projects .project-item .picture-link .square-picture {
       height: 246px;
       object-fit: contain; }
-    .projects .project-item .project_github-links {
-      margin-top: 15px; }
+  .projects .project-item .project_github-links {
+    margin-top: 15px; }
 
 .boxes {
   display: flex;

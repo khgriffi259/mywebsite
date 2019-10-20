@@ -111,25 +111,33 @@ main {
             ul {
               // list-style-position: outside;
               margin: 1rem;
+              li {
+                margin-bottom: .75rem;
+              }
             }
             .text-side {
               display: flex;
               flex-direction: column;
               // align-items: center;
               justify-content: center;
-            }
-             
-            img {
-              object-fit: contain;
-              object-position: center;
-              max-height: 500px;
-              margin: auto;
-              display: block;
               padding: 1rem;
-            }  
-            img#mobile-rps{
-              max-height: initial;
-              width: 300px;
+            }
+            .image-side{
+              display: flex;
+              align-content: center;
+              
+              img {
+                object-fit: contain;
+                object-position: center;
+                min-width: 350px;
+                margin: auto;
+                display: block;
+                padding: 1rem;
+              }  
+              img#mobile-rps{
+                max-height: initial;
+                width: 300px;
+              }
             }
         }
       }
@@ -201,11 +209,14 @@ main {
 
   .project-item{
   
-    width: 400px;
-    
     .picture-link{ 
+      // width: 400px;
+      // height: 300px;
+      object-fit: cover;
+      object-position: center;
       img {
-        width: 100%;
+        // width: 100%;
+        max-height: 500px;
         &:hover {
           opacity: 0.5;
           border-color: $secondary-color;
