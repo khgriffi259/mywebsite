@@ -250,6 +250,8 @@ main {
       object-fit: contain; }
   .projects .project-item .project_github-links {
     margin-top: 15px; }
+  .projects .project-item .fas, .projects .project-item .fab {
+    margin-right: .5rem; }
 
 .boxes {
   display: flex;
@@ -269,13 +271,13 @@ main {
       .boxes div:hover span {
         color: #000; }
 
-.btn, .btn-dark, .btn-light {
+.btn, .btn-dark, .btn-light, .btn-secondary {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
   margin-top: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
+  .btn:hover, .btn-dark:hover, .btn-light:hover, .btn-secondary:hover {
     background: #fdbb30;
     color: #000; }
 
@@ -286,6 +288,10 @@ main {
 .btn-light {
   background: #fff;
   color: #333; }
+
+.btn-secondary {
+  background: #797979;
+  color: #000; }
 
 #main-footer {
   text-align: center;

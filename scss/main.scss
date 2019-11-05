@@ -235,6 +235,9 @@ main {
 
       }
       
+      .fas, .fab {
+        margin-right: .5rem;
+      }
   }
 }
 
@@ -288,6 +291,11 @@ main {
   @extend .btn;
   background: #fff;
   color: #333;
+}
+.btn-secondary {
+  @extend .btn;
+  background: (#797979);
+  color: #000;
 }
 
 #main-footer {
